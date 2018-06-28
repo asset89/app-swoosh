@@ -12,6 +12,7 @@
 		EA628A7420E3938100E1DAE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA628A7220E3938100E1DAE4 /* Main.storyboard */; };
 		EA628A7620E3938500E1DAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA628A7520E3938500E1DAE4 /* Assets.xcassets */; };
 		EA628A7920E3938500E1DAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA628A7720E3938500E1DAE4 /* LaunchScreen.storyboard */; };
+		EA628A8620E41EA700E1DAE4 /* borderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA628A8520E41EA700E1DAE4 /* borderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EA628A7520E3938500E1DAE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA628A7820E3938500E1DAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA628A7A20E3938500E1DAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA628A8520E41EA700E1DAE4 /* borderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = borderButton.swift; path = ../../../../borderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		EA628A6D20E3938100E1DAE4 /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				EA628A8420E41E8000E1DAE4 /* Views */,
 				EA628A6E20E3938100E1DAE4 /* AppDelegate.swift */,
 				EA628A7020E3938100E1DAE4 /* ViewController.swift */,
 				EA628A7220E3938100E1DAE4 /* Main.storyboard */,
@@ -62,6 +65,15 @@
 				EA628A7A20E3938500E1DAE4 /* Info.plist */,
 			);
 			path = "app-swoosh";
+			sourceTree = "<group>";
+		};
+		EA628A8420E41E8000E1DAE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA628A8520E41EA700E1DAE4 /* borderButton.swift */,
+			);
+			name = Views;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +149,7 @@
 			files = (
 				EA628A7120E3938100E1DAE4 /* ViewController.swift in Sources */,
 				EA628A6F20E3938100E1DAE4 /* AppDelegate.swift in Sources */,
+				EA628A8620E41EA700E1DAE4 /* borderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
