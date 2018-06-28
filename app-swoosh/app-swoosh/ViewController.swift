@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
    
     }
+    
+    @IBAction func backSegue(segue: UIStoryboardSegue){
+        
+    }
 
  
 
