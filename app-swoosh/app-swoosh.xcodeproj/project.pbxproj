@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		EA628A6F20E3938100E1DAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA628A6E20E3938100E1DAE4 /* AppDelegate.swift */; };
-		EA628A7120E3938100E1DAE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA628A7020E3938100E1DAE4 /* ViewController.swift */; };
+		EA628A7120E3938100E1DAE4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA628A7020E3938100E1DAE4 /* WelcomeViewController.swift */; };
 		EA628A7420E3938100E1DAE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA628A7220E3938100E1DAE4 /* Main.storyboard */; };
 		EA628A7620E3938500E1DAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA628A7520E3938500E1DAE4 /* Assets.xcassets */; };
 		EA628A7920E3938500E1DAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA628A7720E3938500E1DAE4 /* LaunchScreen.storyboard */; };
 		EA628A8620E41EA700E1DAE4 /* borderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA628A8520E41EA700E1DAE4 /* borderButton.swift */; };
+		EA628A8A20E5549900E1DAE4 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA628A8920E5549900E1DAE4 /* LeagueViewController.swift */; };
+		EA628A8C20E554D000E1DAE4 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA628A8B20E554D000E1DAE4 /* SkillViewController.swift */; };
+		EA628A8E20E63CCE00E1DAE4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA628A8D20E63CCE00E1DAE4 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA628A6B20E3938100E1DAE4 /* app-swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-swoosh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA628A6E20E3938100E1DAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA628A7020E3938100E1DAE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA628A7020E3938100E1DAE4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		EA628A7320E3938100E1DAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA628A7520E3938500E1DAE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA628A7820E3938500E1DAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA628A7A20E3938500E1DAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA628A8520E41EA700E1DAE4 /* borderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = borderButton.swift; path = ../../../../borderButton.swift; sourceTree = "<group>"; };
+		EA628A8920E5549900E1DAE4 /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeagueViewController.swift; path = ../../../../LeagueViewController.swift; sourceTree = "<group>"; };
+		EA628A8B20E554D000E1DAE4 /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SkillViewController.swift; path = ../../../../SkillViewController.swift; sourceTree = "<group>"; };
+		EA628A8D20E63CCE00E1DAE4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../../../../Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,10 @@
 		EA628A6D20E3938100E1DAE4 /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
-				EA628A8420E41E8000E1DAE4 /* Views */,
+				EA628A8820E5540300E1DAE4 /* Controller */,
+				EA628A8720E553F800E1DAE4 /* Model */,
+				EA628A8420E41E8000E1DAE4 /* View */,
 				EA628A6E20E3938100E1DAE4 /* AppDelegate.swift */,
-				EA628A7020E3938100E1DAE4 /* ViewController.swift */,
 				EA628A7220E3938100E1DAE4 /* Main.storyboard */,
 				EA628A7520E3938500E1DAE4 /* Assets.xcassets */,
 				EA628A7720E3938500E1DAE4 /* LaunchScreen.storyboard */,
@@ -67,13 +74,31 @@
 			path = "app-swoosh";
 			sourceTree = "<group>";
 		};
-		EA628A8420E41E8000E1DAE4 /* Views */ = {
+		EA628A8420E41E8000E1DAE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				EA628A8520E41EA700E1DAE4 /* borderButton.swift */,
 			);
-			name = Views;
+			name = View;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		EA628A8720E553F800E1DAE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA628A8D20E63CCE00E1DAE4 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA628A8820E5540300E1DAE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA628A7020E3938100E1DAE4 /* WelcomeViewController.swift */,
+				EA628A8920E5549900E1DAE4 /* LeagueViewController.swift */,
+				EA628A8B20E554D000E1DAE4 /* SkillViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA628A7120E3938100E1DAE4 /* ViewController.swift in Sources */,
+				EA628A7120E3938100E1DAE4 /* WelcomeViewController.swift in Sources */,
 				EA628A6F20E3938100E1DAE4 /* AppDelegate.swift in Sources */,
+				EA628A8C20E554D000E1DAE4 /* SkillViewController.swift in Sources */,
 				EA628A8620E41EA700E1DAE4 /* borderButton.swift in Sources */,
+				EA628A8E20E63CCE00E1DAE4 /* Player.swift in Sources */,
+				EA628A8A20E5549900E1DAE4 /* LeagueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
